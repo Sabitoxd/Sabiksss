@@ -3,7 +3,7 @@ local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
 
 --окно
 local Window = Library:CreateWindow({
-    Title = 'SL2 AimBot',
+    Title = 'Esp by sabik',
     Center = true,
     AutoShow = true,
     TabPadding = 8,
@@ -16,9 +16,10 @@ local Tabs = {
 }
 
 --бокс группа
-local LeftGroupBox = Window.Tabs.Main:AddLeftGroupbox('rejoin')
+local LeftGroupBox = Window.Tabs.Main:AddLeftGroupbox('Esp')
+
 local MyButton = LeftGroupBox:AddButton({
-    Text = 'Rejoin',
+    Text = 'Esp on',
     Func = function()
 local TeleportService = game:GetService("TeleportService")
 TeleportService:Teleport(game.PlaceId, LocalPlayer)
@@ -26,6 +27,7 @@ TeleportService:Teleport(game.PlaceId, LocalPlayer)
     DoubleClick = false,
     Tooltip = 'This is the main button'
 })
+
 --UI Settings
 local LeftGroupBox2 = Tabs.Main:AddLeftGroupbox('UI Settings')
 --выклбчить гуи
