@@ -21,8 +21,7 @@ local LeftGroupBox = Window.Tabs.Main:AddLeftGroupbox('Esp')
 local MyButton = LeftGroupBox:AddButton({
     Text = 'Esp on',
     Func = function()
-local TeleportService = game:GetService("TeleportService")
-TeleportService:Teleport(game.PlaceId, LocalPlayer)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XDima2/XDima2/main/RaumHub"))()
     end,
     DoubleClick = false,
     Tooltip = 'This is the main button'
